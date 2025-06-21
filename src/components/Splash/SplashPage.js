@@ -1,21 +1,18 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 
-import Navigation from "../Header/Navigation";
 import ListingsCarousel from "../ListingsCarousel/ListingsCarousel";
 import Layout from "../Cards";
 import Footer from "../Footer";
+import SearchBar from "../SearchBar/SearchBar";
 
-import { generateRandomString } from "../utils/utils";
 import { fetchListings, clearAllListings } from "../../store/listingsReducer";
-import { DownArrow } from "./SplashPageUtils";
 
 import 'react-loading-skeleton/dist/skeleton.css'
 import "./SplashPage.scss";
 
 const SplashPage = () => {
 	const dispatch = useDispatch();
-	const lastCarousel = useRef(null);
 
 	useEffect(() => {
 		dispatch(fetchListings());
@@ -25,39 +22,20 @@ const SplashPage = () => {
 		};
 	}, [dispatch]);
 
-	function scrollToLastCarousel() {
-		lastCarousel.current.scrollIntoView({ behavior: "smooth" });
-	}
-
 	return (
 		<>
-			<Navigation />
-			<ListingsCarousel
-				prevButtonClassName={generateRandomString(10)}
-				nextButtonClassName={generateRandomString(10)}
-				header={"Homes For You in New York, NY"}
-				paragraph={"Based on your view history"}
-			/>
-
-      <div className="more-recommended-homes">
-        <DownArrow />
-        <a
-          href="#last-carousel"
-          onClick={scrollToLastCarousel}
-        >
-          {" "}
-          More recommended homes
-        </a>
+      <div className="splash-page-container">
+        <div className="search_container">
+            <h1>ArsaMax: Yatırımın Geleceği</h1>
+            <p>Doğru arsayı bulun, geleceğinize yatırım yapın.</p>
+            <SearchBar />
+        </div>
       </div>
 			<Layout />
-			<div ref={lastCarousel}>
-				<ListingsCarousel
-					prevButtonClassName={generateRandomString(10)}
-					nextButtonClassName={generateRandomString(10)}
-					header={"Trending Homes in New York, NY"}
-					paragraph={"Popular listings in the area"}
-				/>
-			</div>
+			<ListingsCarousel
+				header={"Öne Çıkan Arsa İlanları"}
+				paragraph={"Yatırımcıların en çok incelediği arsalar"}
+			/>
 			<Footer />
 		</>
 	);
