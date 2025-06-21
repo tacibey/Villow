@@ -1,0 +1,59 @@
+.profile-wrapper {
+    display: flex;
+    justify-content: center;
+
+
+    .tabs-wrapper {
+        width: 1280px;
+    }
+
+    .chakra-tabs__tab-panel {
+        padding: 0px;
+    }
+
+    .content {
+        width: 1280px;
+
+        .your-home-title {
+            text-align: left;
+            font-size: 36px;
+            font-weight: 700;
+            color: #2A2A33;
+        }
+
+        .header-wrapper {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 0px;
+
+            .delete-home {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                p {
+                    font-weight: 700;
+                    color: rgb(44, 104, 246);
+                }
+
+                &:hover {
+                    cursor: pointer;
+
+                    p {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .listing-cards-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 20px;
+
+        }
+    }
+}
+
