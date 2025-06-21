@@ -1,25 +1,13 @@
-export const buyHome = {
-	headerImg:
-		"https://wp-tid.zillowstatic.com/bedrock/app/uploads/sites/5/2022/07/Buy_a_home.webp",
-	header: "Buy a home",
-	body: "Find your place with an immersive photo experience and the most listings, including things you won’t find anywhere else.",
-	btnText: "Browse homes",
+export const arsaAl = {
+	headerImg: "https://images.unsplash.com/photo-1549558549-475fe4c34437?q=80&w=2070&auto=format&fit=crop", // Örnek bir arsa resmi
+	header: "Arsa Al",
+	body: "Yatırım fırsatlarını keşfedin. Geniş portföyümüzdeki arsaları inceleyerek geleceğinize yatırım yapın.",
+	btnText: "İlanları İncele",
 };
 
-export const sellHome = {
-	headerImg:
-		"https://wp-tid.zillowstatic.com/bedrock/app/uploads/sites/5/2022/07/Sell_a_home.webp",
-	header: "Sell a home",
-	body: "No matter what path you take to sell your home, we can help you navigate a successful sale.",
-	btnText: "See your options",
+export const arsaSat = {
+	headerImg: "https://images.unsplash.com/photo-1622969962293-01317597b670?q=80&w=2070&auto=format&fit=crop", // Örnek bir arsa resmi
+	header: "Arsa Sat",
+	body: "Arsanızı ücretsiz olarak listeleyin ve Türkiye'nin dört bir yanındaki binlerce potansiyel alıcıya ulaşın.",
+	btnText: "Ücretsiz İlan Ver",
 };
-
-export const rentHome = {
-	headerImg:
-		"https://wp-tid.zillowstatic.com/bedrock/app/uploads/sites/5/2022/08/Rent_a_home.webp",
-	header: "Rent a home",
-	body: "We’re creating a seamless online experience – from shopping on the largest rental network, to applying, to paying rent.",
-	btnText: "Find rentals",
-};
-
-//
