@@ -1,0 +1,60 @@
+.search-container {
+  display: flex;
+  flex-direction: column;
+
+  .search-word-row {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .search-word-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background-color: rgb(223 227 230);
+    white-space: nowrap;
+    gap: 5px;
+
+    p {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .search-word-close-icon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .add-another-container {
+    p {
+      position: relative;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%;
+      text-overflow: ellipsis;
+      opacity: 0.6;
+    }
+  }
+
+  .icon-container {
+    opacity: 0.7;
+    margin: 0 15px 0 5px;
+  }
+}
+
+.text-input {
+  overflow: hidden;
+  margin-top: 12px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.no-search-word {
+  margin-top: 0;
+}

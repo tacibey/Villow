@@ -1,0 +1,33 @@
+@mixin shared-styles {
+  display: flex;
+  align-items: center;
+  height: 51px;
+  width: 100%;
+
+  p {
+    margin-left: 30px;
+    color: #807e7e;
+    font-weight: 500;
+  }
+
+  .highlighted {
+    color: black;
+    font-weight: 500;
+    margin: 0px;
+  }
+}
+
+.suggestion-item-splash {
+  @include shared-styles;
+  width: 95%;
+}
+
+
+.suggestion-item-index {
+  @include shared-styles;
+
+  &:hover {
+    background-color: rgb(243 250 254);
+    border-radius: 6px;
+  }
+}

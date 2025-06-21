@@ -1,0 +1,63 @@
+.home-type-container {
+  display: flex;
+  flex-direction: column;
+
+  .deselect-all-title-container {
+    display: fles;
+    flex-direction: column;
+    background: #f5f5f5;
+    color: #596b82;
+    padding: 12px 16px;
+    font-weight: 700;
+
+    h6 {
+      font-size: 14px;
+    }
+
+    .deselect-btn-container {
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+      width: 178px;
+      gap: 10px;
+
+      &:hover .deselect-text {
+        text-decoration: underline;
+      }
+
+      .deselect-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 70%;
+        width: 20px !important;
+        height: 20px !important;
+        background: #0d4599;
+        color: white;
+
+        .icon {
+          width: 12px;
+        }
+      }
+
+      h6 {
+        font-size: 14px;
+        font-weight: 700;
+        color: #0d4599;
+        user-select: none;
+      }
+    }
+  }
+
+  .home-type-checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 12px 16px;
+
+    input {
+      width: 20px;
+      border-radius: 10px;
+    }
+  }
+}

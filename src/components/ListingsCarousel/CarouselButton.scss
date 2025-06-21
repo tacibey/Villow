@@ -1,0 +1,28 @@
+.custom-nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 5px;
+  width: 7%;
+}
+
+.btn {
+  background-color: rgb(255 255 255);
+  border: 1px solid rgb(167 166 171);
+  color: rgb(42 42 50);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+
+  .btn__icon {
+    font-size: 15px;
+  }
+
+  &:hover {
+    background-color: rgb(241 241 241);
+  }
+}
+
+.swiper-button-disabled {
+  opacity: 0.3;
+}
