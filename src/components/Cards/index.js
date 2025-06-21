@@ -1,35 +1,29 @@
 import React from "react";
 import "./index.scss";
-import { buyHome, sellHome, rentHome } from "./cardText";
+import { arsaAl, arsaSat } from "./cardText";
 import Card from "./Card";
 import { Link } from "react-router-dom";
 
 const Layout = () => {
 	return (
 		<div className="cards-container">
-			<Link to="/listings">
+			<Link to="/ilanlar">
 				<Card
-					headerImg={buyHome.headerImg}
-					header={buyHome.header}
-					body={buyHome.body}
-					buttonText={buyHome.btnText}
+					headerImg={arsaAl.headerImg}
+					header={arsaAl.header}
+					body={arsaAl.body}
+					buttonText={arsaAl.btnText}
 				/>
 			</Link>
 
-			<Link to="/listings/new">
+			<Link to="/arsa-sat">
 				<Card
-					headerImg={sellHome.headerImg}
-					header={sellHome.header}
-					body={sellHome.body}
-					buttonText={sellHome.btnText}
+					headerImg={arsaSat.headerImg}
+					header={arsaSat.header}
+					body={arsaSat.body}
+					buttonText={arsaSat.btnText}
 				/>
 			</Link>
-			<Card
-				headerImg={rentHome.headerImg}
-				header={rentHome.header}
-				body={rentHome.body}
-				buttonText={rentHome.btnText}
-			/>
 		</div>
 	);
 };
